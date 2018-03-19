@@ -1,7 +1,6 @@
 -- table: users
 -- Show duplicated entries here
 
-SELECT name,password,gender,created_at,deleted_at
-FROM users
-GROUP BY name,password,gender,created_at,deleted_at
-HAVING COUNT(password)>1
+SELECT [users.name,users2.name]
+FROM users INNER JOIN users AS users2
+ON users.password=users2.password AND users.gender=users2.gender AND users.created_at=users2.created_at AND users.deleted_at=users2.deleted_at;

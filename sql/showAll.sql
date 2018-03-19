@@ -1,4 +1,4 @@
 -- table: users
 -- select all users data.
 
-SELECT * FROM users
+SELECT * FROM users;

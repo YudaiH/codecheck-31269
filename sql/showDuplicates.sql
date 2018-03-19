@@ -3,5 +3,4 @@
 
 SELECT name,password,gender,created_at,deleted_at
 FROM users
-GROUP BY name,password,gender,created_at,deleted_at
-HAVING COUNT(name)>1
+WHERE COUNT(name,password,gender,created_at,deleted_at)>1 AND 

@@ -3,4 +3,4 @@
 
 SELECT name,password,gender,created_at,deleted_at
 FROM users
-WHERE COUNT(name,password,gender,created_at,deleted_at)>1 AND 
+WHERE COUNT(name,password,gender,created_at,deleted_at)>1
